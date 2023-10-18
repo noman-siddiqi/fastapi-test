@@ -1,0 +1,17 @@
+python3 -m venv .venv
+
+pip install uvicorn
+pip install fastapi
+pip install "python-jose[cryptography]"
+pip install "passlib[bcrypt]"
+pip install python-multipart
+pip install psycopg2-binary
+
+uvicorn main:app --reload   
+
+cd ~/Desktop/DockerComposeFile/postgres-without-admin 
+docker compose up  
+
+
+
+PassLib is a great Python package to handle password hashes.
